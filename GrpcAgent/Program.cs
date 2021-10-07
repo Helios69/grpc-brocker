@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 using Common;
 
-namespace grpcbroker
+namespace Broker
 {
     public class Program
     {

@@ -1,4 +1,3 @@
-using Internal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +7,7 @@ using Microsoft.Extensions.Logging;
 using GrpcAgent;
 
 
-namespace grpcbroker
+namespace Broker.Services
 {
     public class PublisherService: Publisher.PublisherBase
     {
@@ -16,8 +15,8 @@ namespace grpcbroker
         {
             return Task.FromResult(new PublishReply()
             {
-                isSuccess: true
-            })
+                IsSuccess: true
+            });
         }
     }
 }
